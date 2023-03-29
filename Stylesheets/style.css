@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;
+   
+
+}
+
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 30px; 
+}
+
+
+.nav-menu hr {
+    width: 30%;
+    border: 1px solid #000000;
+
+}
+.nav-menu h2 {
+    margin: 10px;
+    font-size: 2rem;
+}
+
+.nav-menu a {
+    color: #000000;
+}
+
+header {
+    border-bottom: 1px solid grey;
+    width: 100%;
+}
+.header-wrap {
+    display: flex;
+   gap: 20px;
+
+}
+
+.logo {
+    max-width: 150px;
+    height: clamp(50px, 70px, 150px);
+}
+
+
+.navbar ul li {
+    list-style: none;
+    display: block;
+    position: relative;
+    margin: 0 45px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #d26800;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.nav-menu li:hover::after {
+    width: 100%;
+}
+
+
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+
+
+
+
+.hamburger {
+    display: block;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 5%;
+    height: 40vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+    align-items: flex-end;
+    padding-top: 2rem;
+    transition: 0.3s;
+    z-index: 1;
+    background-color: rgb(130, 100, 100);
+}
+
+.nav-link {
+    font-size: 2rem;
+}
+
+
+.nav-item {
+    margin: 16px 0;
+}
+
+.nav-menu.active {
+    right: 0;
+}
+
+.header-icons a {
+    font-size: 2.5rem;
+    margin: 20px 30px;
+}
