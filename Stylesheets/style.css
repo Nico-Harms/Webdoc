@@ -3,9 +3,11 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Oswald', sans-serif;
-   
+    font-family: 'Oswald', sans-serif
 
+}
+body {
+background-color: #6E675F;
 }
 
 
@@ -13,6 +15,7 @@ a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.5rem;
+    z-index: 1;
 }
 
 .navbar {
@@ -66,7 +69,7 @@ header {
     content: "";
     height: 3px;
     width: 0%;
-    background: #d26800;
+   background-color: #11567b;
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -112,7 +115,6 @@ header {
 .nav-menu {
     position: fixed;
     right: -100%;
-    top: 5%;
     height: 40vh;
     flex-direction: column;
     display: flex;
@@ -120,9 +122,9 @@ header {
     width: 50%;
     height: 100%;
     align-items: flex-end;
-    padding-top: 2rem;
+   top: 0%;
     transition: 0.3s;
-    z-index: 1;
+    z-index: -1;
     background-color: rgb(130, 100, 100);
 }
 
