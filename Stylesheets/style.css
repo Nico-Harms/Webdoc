@@ -1,3 +1,5 @@
+
+
 * {
     padding: 0;
     margin: 0;
@@ -7,7 +9,7 @@
 
 }
 body {
-background-color: #6E675F;
+background-color: #c59762;
 }
 
 
@@ -145,3 +147,81 @@ header {
     font-size: 2.5rem;
     margin: 20px 30px;
 }
+
+.graph {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #000;
+    
+  }
+
+  .graph p {
+    margin-left: 10px;
+  }
+  figcaption {
+    width: 70px;
+    border-right: 1px solid rgb(255, 255, 255);
+    padding: 20px 0px;
+    text-align: center;
+
+  }
+  
+  .graph-bar {
+    height: 30px;
+    background-color: rgb(96, 40, 40);
+    margin-bottom: 10px;
+    display: flex;
+    margin: auto 0px;
+    
+  }
+
+.graph-inline {
+    display: flex;
+    align-items: center;
+   
+}
+  
+  .bar1 {
+    width: 10%;
+  }
+  .bar2 {
+    width: 20%;
+
+  }
+  
+  .bar3 {
+    width: 30%;
+  }
+  
+  .bar4 {
+    width: 40%;
+  }
+  
+  .bar5 {
+    width: 50%;
+  }
+  
+  .bar6 {
+    width: 60%;
+  }
+  
+  .bar7 {
+    width: 65%;
+  }
+  .bar8 {
+    width: 70%;
+  }
+  
+  .bar9 {
+    width: 75%;
+  }
+  
+  .bar10 {
+    width: 80%;
+  }
+  
+  
+
+  
