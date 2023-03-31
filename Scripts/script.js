@@ -22,11 +22,11 @@ bars.forEach((bar) => {
 
 
 //graph animation
-const graphBar1 = document.querySelector(".bar1")
+const graphBar1 = document.querySelector(".graph-bar")
 
 const observer = new IntersectionObserver(entries => {})
 
-observer.observe(document.querySelector(".bar1"))
+observer.observe(document.querySelector(".graph-bar"))
 
 entries.forEach(entry => {
   if (entry.isIntersecting)
