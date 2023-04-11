@@ -148,6 +148,30 @@ header {
   margin: 20px 30px;
 }
 
+/* Big video styling */ 
+.bg-video {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-section {
+ 
+  height: 90vh;
+}
+#myVideo {
+  position: relative;
+ height: 100%;
+ width: 100%;
+}
+
+
+
+
 .graph {
   display: flex;
   flex-direction: column-reverse;

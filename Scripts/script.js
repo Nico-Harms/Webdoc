@@ -32,3 +32,10 @@ entries.forEach(entry => {
   if (entry.isIntersecting)
     entry.target.classList.add("graph-bar-animation")
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    var video = document.getElementById("myVideo");
+    video.play();
+  }, 2000);
+});
