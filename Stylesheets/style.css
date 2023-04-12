@@ -163,7 +163,9 @@ position: relative;
 }
 
 
-
+p {
+  color: white;
+}
 
 
 .graph {
@@ -184,12 +186,13 @@ figcaption {
   border-right: 1px solid rgb(255, 255, 255);
   padding: 20px 0px;
   text-align: center;
+  color: white;
 
 }
 
 .graph-bar {
   height: 30px;
-  background-color: rgb(96, 40, 40);
+  background-color: #64E3A1;
   margin-bottom: 10px;
   display: flex;
   margin: auto 0px;
