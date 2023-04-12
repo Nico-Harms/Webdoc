@@ -1,10 +1,12 @@
 //Hamburger Menu
-const hamburger = document.querySelector(".hamburger");
+const dropdown = document.querySelector(".dropdown ");
 const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
+dropdown.addEventListener("click", () => {
+  dropdown.classList.toggle("active");
   navMenu.classList.toggle("active");
+
+  
 })
 
 
@@ -21,7 +23,7 @@ bars.forEach((bar) => {
 
 
 
-//graph animation - skal først køre når brugeren ser graferne. (in-view)
+//graph animation - skal først køre når brugeren ser graferne. (in-view )
 const graphBar1 = document.querySelector(".graph-bar")
 
 const observer = new IntersectionObserver(entries => {})
