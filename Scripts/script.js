@@ -21,7 +21,7 @@ bars.forEach((bar) => {
 
 
 
-//graph animation
+//graph animation - skal først køre når brugeren ser graferne. (in-view)
 const graphBar1 = document.querySelector(".graph-bar")
 
 const observer = new IntersectionObserver(entries => {})
@@ -33,6 +33,8 @@ entries.forEach(entry => {
     entry.target.classList.add("graph-bar-animation")
 })
 
+
+// Meningen at den først skal afspille 2 sekunder efter siden af loaded, men virker ikke pt 
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
     var video = document.getElementById("myVideo");

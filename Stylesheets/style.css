@@ -100,6 +100,7 @@ header {
 
 .hamburger {
   display: block;
+  
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -108,10 +109,12 @@ header {
 
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
+  
 }
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+  
 }
 
 .nav-menu {
@@ -126,7 +129,6 @@ header {
   align-items: flex-end;
   top: 0%;
   transition: 0.3s;
-  z-index: -1;
   background-color: rgb(130, 100, 100);
 }
 
@@ -149,25 +151,17 @@ header {
 }
 
 /* Big video styling */ 
-.bg-video {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -1;
-}
 
-.video-section {
- 
-  height: 90vh;
-}
+
+
 #myVideo {
-  position: relative;
+position: relative;
  height: 100%;
  width: 100%;
+ object-fit: contain;
+ z-index: -10;
 }
+
 
 
 
@@ -262,6 +256,6 @@ figcaption {
 @media (prefers-reduced-motion: no-preference) {
   .graph-bar {
     animation-name: wipe-enter;
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
   }
 }
