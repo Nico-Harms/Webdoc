@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Oswald', sans-serif
+  font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -105,6 +105,31 @@ p {
 }
 
 
+.indledning {
+  width: 80%;
+  margin: auto;
+  font-size: 2rem;
+  padding: 1.5rem 0px;
+}
+
+.quoteWrapper img {
+height: 100px;
+width: 150px;
+}
+
+.quoteWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quoteOne {
+  width: 80%;
+  margin: auto;
+  font-size: 2.2rem;
+}
+
+/* Graph styling for interactive graph */ 
 .graph {
   display: flex;
   flex-direction: column-reverse;
@@ -200,7 +225,10 @@ figcaption {
   }
 }
 
+/* END OF GRAPH STYLING */ 
 
+
+/*Burger-menu styling and active - nonactive classes */
 
 .hamburger {
   cursor: pointer;
@@ -246,6 +274,7 @@ figcaption {
 
 
 .nav-menu {
+  
   position: fixed;
   right: -100%;
   height: 40vh;
@@ -272,3 +301,5 @@ figcaption {
 .nav-menu.active {
   right: 0;
 }
+
+/*END OF BURGER-MENU STYLING */ 
