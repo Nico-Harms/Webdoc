@@ -41,3 +41,10 @@ document.addEventListener("DOMContentLoaded", function() {
     video.play();
   }, 2000);
 });
+
+
+
+
+
+
+
