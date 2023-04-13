@@ -46,6 +46,7 @@ a {
 header {
   border-bottom: 1px solid grey;
   width: 100%;
+  background-color: #2E2E38;
 }
 
 .header-wrap {
@@ -92,13 +93,13 @@ header {
   z-index: 1;
 }
 
-/* Big video styling */ 
+/* Big video styling */
 #myVideo {
-position: relative;
- height: 100%;
- width: 100%;
- object-fit: contain;
- z-index: -10;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: -10;
 }
 
 
@@ -115,10 +116,10 @@ p {
 }
 
 .quoteWrapper img {
-height: 35vh;
-width: 80%;
-margin: auto;
-object-fit: cover;
+  height: 35vh;
+  width: 80%;
+  margin: auto;
+  object-fit: cover;
 }
 
 .quoteWrapper {
@@ -129,6 +130,7 @@ object-fit: cover;
   margin: auto;
   gap: 10%;
 }
+
 .quoteWrapper figcaption {
   width: 80%;
   border: none;
@@ -157,7 +159,7 @@ object-fit: cover;
   flex-direction: column;
 }
 
-/* Graph styling for interactive graph */ 
+/* Graph styling for interactive graph */
 .graph {
   display: flex;
   flex-direction: column-reverse;
@@ -243,9 +245,7 @@ figcaption {
     width: 0%;
   }
 
-  50% {
-
-  }
+  50% {}
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -255,7 +255,7 @@ figcaption {
   }
 }
 
-/* END OF GRAPH STYLING */ 
+/* END OF GRAPH STYLING */
 
 
 /*Burger-menu styling and active - nonactive classes */
@@ -283,18 +283,18 @@ figcaption {
   stroke-width: 3;
   /* Define the transition for transforming the Stroke */
   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line-top-bottom {
   stroke-dasharray: 12 63;
 }
 
-.hamburger input:checked + svg {
+.hamburger input:checked+svg {
   transform: rotate(-45deg);
 }
 
-.hamburger input:checked + svg .line-top-bottom {
+.hamburger input:checked+svg .line-top-bottom {
   stroke-dasharray: 20 300;
   stroke-dashoffset: -32.42;
 }
@@ -304,7 +304,7 @@ figcaption {
 
 
 .nav-menu {
-  
+
   position: fixed;
   right: -100%;
   height: 40vh;
@@ -337,13 +337,13 @@ figcaption {
   color: #64E3A1;
 }
 
-/*END OF BURGER-MENU STYLING */ 
+/*END OF BURGER-MENU STYLING */
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Euclid Circular A";
-  background: #2E2E38 linear-gradient(45deg, #272525, #151515);
+  background: #2E2E38;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -355,19 +355,20 @@ body {
 
 .parallax-con img:nth-child(1) {
   width: 200px;
-  top: 30px;
+  top: 10px;
+  left: 150px;
 }
 
 .parallax-con img:nth-child(2) {
   width: 400px;
-  left: 500px;
+  right: 50px;
   top: 300px;
 }
 
 .parallax-con img:nth-child(3) {
-  width: 100px;
-  left: 60px;
-  top: 600px;
+  width: 300px;
+  left: -100px;
+  top: 500px;
 }
 
 .home-content {
