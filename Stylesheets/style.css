@@ -111,24 +111,50 @@ p {
   width: 80%;
   margin: auto;
   font-size: 2rem;
-  padding: 1.5rem 0px;
+  padding: 4rem 0px;
 }
 
 .quoteWrapper img {
-height: 100px;
-width: 150px;
+height: 35vh;
+width: 80%;
+margin: auto;
+object-fit: cover;
 }
 
 .quoteWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 80%;
+  margin: auto;
+  gap: 10%;
+}
+.quoteWrapper figcaption {
+  width: 80%;
+  border: none;
+  padding: 10px 0 0 0;
+  margin: auto;
+  font-weight: 200;
+  font-style: italic;
+  font-size: .7rem;
+  color: rgb(159, 152, 152);
 }
 
 .quoteOne {
-  width: 80%;
-  margin: auto;
-  font-size: 2.2rem;
+  width: 60%;
+  font-size: 2.7rem;
+}
+
+.picture-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.picture-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Graph styling for interactive graph */ 
@@ -153,6 +179,8 @@ figcaption {
   color: white;
 
 }
+
+
 
 .graph-bar {
   height: 30px;
