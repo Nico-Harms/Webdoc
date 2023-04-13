@@ -122,10 +122,11 @@ p {
 }
 
 
-.brødtekst {
+.breadtekst {
   margin: auto;
   font-size: 1.3rem;
   padding: 4rem 0px;
+  line-height: 2.2rem;
 }
 
 .quoteWrapper img {
@@ -138,7 +139,6 @@ p {
 .quoteWrapper {
   display: flex;
   justify-content: center;
-  
   gap: 5%;
   
   
@@ -148,11 +148,11 @@ p {
   width: 80%;
   border: none;
   padding: 10px 0 0 0;
-  margin: auto;
   font-weight: 200;
   font-style: italic;
   font-size: .7rem;
   color: rgb(159, 152, 152);
+  margin: auto;
 }
 
 .quoteOne {
@@ -162,15 +162,22 @@ p {
 }
 
 .picture-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 10px;
+
 }
 
-
-
-.picture-wrapper {
+.flex-wrapper {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.video-tekst {
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-align: center;
 }
 
 /* Graph styling for interactive graph */
@@ -179,7 +186,7 @@ p {
   flex-direction: column-reverse;
   height: 100%;
   width: 100%;
-  border: 1px solid #000;
+  
 
 }
 
@@ -388,7 +395,6 @@ body {
 .home-content {
   position: relative;
   z-index: 10;
-  padding: 100px 15%;
 }
 
 
