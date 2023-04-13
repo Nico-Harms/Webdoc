@@ -407,7 +407,7 @@ body {
   height: 500px;
 }
 
-#triangle {
+.trekant {
   fill: none;
   stroke: #64E3A1;
   stroke-miterlimit: 10;
