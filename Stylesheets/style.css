@@ -11,18 +11,21 @@
 }
 
 :root {
-  --textColor: #FFF8F0; 
+  --textColor: #FFF8F0;
 }
 
 body {
   background-color: #2e2e38;
 }
+
 .siteWrapper {
   width: 80%;
   margin: 0 auto;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   text-align: center;
   font-size: 2rem;
   font-weight: 500;
@@ -140,8 +143,8 @@ p {
   display: flex;
   justify-content: center;
   gap: 5%;
-  
-  
+
+
 }
 
 .quoteWrapper figcaption {
@@ -186,7 +189,7 @@ p {
   flex-direction: column-reverse;
   height: 100%;
   width: 100%;
-  
+
 
 }
 
@@ -397,5 +400,18 @@ body {
   z-index: 10;
 }
 
+/* line-scroll */
+#mySVG {
+
+  width: 200px;
+  height: 500px;
+}
+
+#triangle {
+  fill: none;
+  stroke: #64E3A1;
+  stroke-miterlimit: 10;
+  stroke-width: 20px;
+}
 
 /*PARALLAX END*/
