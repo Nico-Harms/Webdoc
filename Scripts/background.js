@@ -3,7 +3,7 @@ const handleScroll = (event) => {
   
     console.log("handleScroll");
   
-    const images = document.querySelectorAll(".parllax-img");
+    const images = document.querySelectorAll(".parallax-img");
   
     console.log("images", images);
   
