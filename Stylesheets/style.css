@@ -7,12 +7,26 @@
   scroll-behavior: smooth;
   /* font-family: 'Oswald', sans-serif; */
   font-family: 'Heebo', sans-serif;
+  color: var(--textColor);
+}
+
+:root {
+  --textColor: #FFF8F0; 
 }
 
 body {
   background-color: #2e2e38;
 }
+.siteWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
 
+h2, h3, h4 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
 
 a {
   color: #64E3A1;
@@ -107,10 +121,9 @@ p {
 }
 
 
-.indledning {
-  width: 80%;
+.brødtekst {
   margin: auto;
-  font-size: 2rem;
+  font-size: 1.3rem;
   padding: 4rem 0px;
 }
 
@@ -123,11 +136,11 @@ object-fit: cover;
 
 .quoteWrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 80%;
-  margin: auto;
-  gap: 10%;
+  
+  gap: 5%;
+  
+  
 }
 .quoteWrapper figcaption {
   width: 80%;
@@ -143,6 +156,7 @@ object-fit: cover;
 .quoteOne {
   width: 60%;
   font-size: 2.7rem;
+  padding-top: 30px;
 }
 
 .picture-wrapper {
