@@ -401,7 +401,7 @@ body {
 }
 
 /* line-scroll */
-#mySVG {
+.mySVG {
 
   width: 200px;
   height: 500px;
@@ -419,19 +419,20 @@ body {
 
 /* VIDEO STYLING */
 
-.student-part, .teacher-part{
+.student-part,
+.teacher-part {
   display: grid;
   gap: 40px;
 }
 
-.student-part video{
+.student-part video {
   width: 80%;
   display: block;
   margin: auto;
   border-radius: 30px;
 }
 
-.teacher-part video{
+.teacher-part video {
   width: 80%;
   display: block;
   margin: auto;
@@ -441,37 +442,37 @@ body {
 
 /* Fade Animations - Start */
 
-.fade-in{
+.fade-in {
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
 
-.fade-in.appear{
+.fade-in.appear {
   opacity: 1;
 }
 
-.from-left{
+.from-left {
   transform: translateX(-100px);
 }
 
-.from-right{
+.from-right {
   transform: translateX(100px);
 }
 
-.from-bottom{
+.from-bottom {
   transform: translateY(50px);
 }
 
 .from-left,
 .from-right,
-.from-bottom{
+.from-bottom {
   transition: opacity 400ms ease-in, transform 400ms ease-in;
   opacity: 0;
 }
 
 .from-left.appear,
 .from-right.appear,
-.from-bottom.appear{
+.from-bottom.appear {
   transform: translateX(0);
   opacity: 1;
 }

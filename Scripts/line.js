@@ -1,7 +1,7 @@
-// Get all the <path> elements on the page with the "scroll-line" class
+// Get all the <path> elements on the page with the "trekant" class
 var triangles = document.querySelectorAll(".trekant");
 
-triangles.forEach(function(triangle) {
+triangles.forEach(function (triangle) {
   // Get the length of the <path> element
   var length = triangle.getTotalLength();
 
@@ -11,22 +11,16 @@ triangles.forEach(function(triangle) {
   // Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
   triangle.style.strokeDashoffset = length;
 
-  // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
-  var scrolledIntoView = false;
+  var isActive = false;
   var scale = 3;
 
-  window.addEventListener("scroll", function() {
-    // Get the position of the triangle relative to the viewport
-    var elementTop = triangle.getBoundingClientRect().top;
+  function updateTriangle() {
+    if (isActive) {
+      // Get the position of the triangle relative to the viewport
+      var elementTop = triangle.getBoundingClientRect().top;
 
-    if (!scrolledIntoView && elementTop < window.innerHeight) {
-      // The triangle is within the top of the viewport, so set scrolledIntoView to true
-      scrolledIntoView = true;
-    }
-
-    if (scrolledIntoView) {
-      // Calculate the scroll percentage with a 0.5 offset to delay the start of the scroll effect
-      var scrollpercent = ((document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) - 0.4;
+      // Calculate the scroll percentage for this triangle only
+      var scrollpercent = ((window.innerHeight - elementTop) / window.innerHeight) - 0.5;
 
       // Limit the scrollpercent value between 0 and 1
       scrollpercent = Math.max(0, Math.min(1, scrollpercent));
@@ -36,6 +30,28 @@ triangles.forEach(function(triangle) {
 
       // Reverse the drawing (when scrolling upwards)
       triangle.style.strokeDashoffset = length - draw;
+    }
+  }
+
+  function setActive() {
+    isActive = true;
+    updateTriangle();
+  }
+
+  function setInactive() {
+    isActive = false;
+    triangle.style.strokeDashoffset = length;
+  }
+
+  // Set the active state when the triangle is in view
+  window.addEventListener("scroll", function () {
+    // Get the position of the triangle relative to the viewport
+    var elementTop = triangle.getBoundingClientRect().top;
+
+    if (elementTop < window.innerHeight * 0.75 && elementTop > -length) {
+      setActive();
+    } else {
+      setInactive();
     }
   });
 });
