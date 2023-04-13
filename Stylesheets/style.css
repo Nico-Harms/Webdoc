@@ -415,3 +415,25 @@ body {
 }
 
 /*PARALLAX END*/
+
+
+/* VIDEO STYLING */
+
+.student-part, .teacher-part{
+  display: grid;
+  gap: 40px;
+}
+
+.student-part video{
+  width: 80%;
+  display: block;
+  margin: auto;
+  border-radius: 30px;
+}
+
+.teacher-part video{
+  width: 80%;
+  display: block;
+  margin: auto;
+  border-radius: 30px;
+}
