@@ -223,9 +223,9 @@ header {
 /* Big video styling */
 #myVideo {
   position: relative;
-  height: 100%;
+  height: 40rem;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   z-index: -10;
 }
 
@@ -314,7 +314,7 @@ p {
 }
 
 .graph-article {
-  width: 876px;
+  display: block;
 }
 
 figcaption {
@@ -515,7 +515,6 @@ body {
 .home-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 150px;
   position: relative;
   z-index: 10;
