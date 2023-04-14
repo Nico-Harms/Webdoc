@@ -556,7 +556,7 @@ body {
   align-items: center;
 }
 
-.info-icon img {
+.info-icon img:nth-child(1) {
   width: 150px;
 }
 
@@ -572,6 +572,113 @@ body {
 .hoved-tomt {
   display: none;
 }
+
+.slide-br {
+  -webkit-animation: slide-br 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-br 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-bl {
+  -webkit-animation: slide-bl 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-bl 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+/**
+ * ----------------------------------------
+ * animation slide-br
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-br {
+  0% {
+    -webkit-transform: translateY(-350px) translateX(-250px);
+    transform: translateY(-300px) translateX(-250px);
+  }
+
+  100% {
+    -webkit-transform: translateY(100px) translateX(100px);
+    transform: translateY(100px) translateX(100px);
+  }
+}
+
+@keyframes slide-br {
+  0% {
+    -webkit-transform: translateY(-300px) translateX(-300px);
+    transform: translateY(-200px) translateX(-300px);
+  }
+
+  100% {
+    -webkit-transform: translateY(100px) translateX(100px);
+    transform: translateY(100px) translateX(100px);
+  }
+}
+
+
+/**
+ * ----------------------------------------
+ * animation slide-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+
+
+/**
+ * ----------------------------------------
+ * animation slide-bl
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-bl {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(100px) translateX(-100px);
+    transform: translateY(100px) translateX(-100px);
+  }
+}
+
+@keyframes slide-bl {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(100px) translateX(-100px);
+    transform: translateY(100px) translateX(-100px);
+  }
+}
+
+
 
 
 
