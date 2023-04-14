@@ -313,6 +313,10 @@ p {
   margin-left: 10px;
 }
 
+.graph-article {
+  width: 876px;
+}
+
 figcaption {
   width: 70px;
   border-right: 1px solid rgb(255, 255, 255);
@@ -509,6 +513,10 @@ body {
 }
 
 .home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
   position: relative;
   z-index: 10;
 }
@@ -574,18 +582,18 @@ body {
 }
 
 .slide-br {
-  -webkit-animation: slide-br 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-br 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-br 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-br 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .slide-bottom {
-  -webkit-animation: slide-bottom 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-bottom 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .slide-bl {
-  -webkit-animation: slide-bl 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-bl 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-bl 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-bl 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -602,7 +610,7 @@ body {
 
   100% {
     -webkit-transform: translateY(100px) translateX(100px);
-    transform: translateY(100px) translateX(100px);
+    transform: translateY(20px) translateX(60px);
   }
 }
 
@@ -613,8 +621,8 @@ body {
   }
 
   100% {
-    -webkit-transform: translateY(100px) translateX(100px);
-    transform: translateY(100px) translateX(100px);
+    -webkit-transform: translateY(20px) translateX(60px);
+    transform: translateY(20px) translateX(60px);
   }
 }
 
@@ -661,8 +669,8 @@ body {
   }
 
   100% {
-    -webkit-transform: translateY(100px) translateX(-100px);
-    transform: translateY(100px) translateX(-100px);
+    -webkit-transform: translateY(20px) translateX(-100px);
+    transform: translateY(20px) translateX(-60px);
   }
 }
 
@@ -673,8 +681,8 @@ body {
   }
 
   100% {
-    -webkit-transform: translateY(100px) translateX(-100px);
-    transform: translateY(100px) translateX(-100px);
+    -webkit-transform: translateY(20px) translateX(-100px);
+    transform: translateY(20px) translateX(-60px);
   }
 }
 
