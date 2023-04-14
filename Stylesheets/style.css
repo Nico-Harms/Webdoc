@@ -580,6 +580,7 @@ body {
   transform: translateY(50px);
 }
 
+
 .from-left,
 .from-right,
 .from-bottom {
@@ -593,6 +594,7 @@ body {
   transform: translateX(0);
   opacity: 1;
 }
+
 
 /* Fade Animations - Slut */
 
@@ -766,6 +768,21 @@ body {
   position: absolute;
   top: 160px;
   width: 3px;
+}
+
+.phone-wrapper{
+  position: relative;
+}
+
+.robotlilguy{
+  position: absolute;
+  scale: 0.5;
+  bottom: -100px;
+  left: 100px;
+}
+
+.robotlilguy img{
+  transform: rotate(45deg);
 }
 
 .prompt{
