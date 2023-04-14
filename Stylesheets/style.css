@@ -248,6 +248,11 @@ p {
   gap: 30px;
 }
 
+.hvordan  {
+  padding: 0px;
+  margin: 0px;
+}
+
 .quoteWrapper img {
   height: 35vh;
   width: 80%;
@@ -284,6 +289,9 @@ p {
   display: grid;
   gap: 10px;
 
+}
+.interview h3  {
+    padding-bottom: 5rem;
 }
 
 .flex-wrapper {
@@ -726,6 +734,7 @@ body {
 
 .iphone-x .screen {
   background: #2E2E38;
+  
   background-position: center center;
   background-size: cover;
   border-radius: 33px;
