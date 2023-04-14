@@ -845,8 +845,7 @@ body {
 .robotlilguy{
   position: absolute;
   scale: 0.5;
-  bottom: -100px;
-  left: 100px;
+  left: 450px;
 }
 
 .robotlilguy img{
