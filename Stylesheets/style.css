@@ -61,9 +61,10 @@ a {
 }
 
 header {
-  border-bottom: 1px solid grey;
   width: 100%;
   background-color: #2E2E38;
+  position: fixed;
+  z-index: 3000;
 }
 
 .header-wrap {
@@ -87,7 +88,7 @@ header {
   align-items: center;
 }
 
-.nav-menu li::after {
+/* .nav-menu li::after {
   content: "";
   height: 3px;
   width: 0%;
@@ -100,7 +101,7 @@ header {
 
 .nav-menu li:hover::after {
   width: 100%;
-}
+} */
 
 #headerText {
   font-size: 1rem;
@@ -109,6 +110,114 @@ header {
   align-items: center;
   z-index: 1;
 }
+
+
+/* Nav menu header glitch styling - start */
+
+.nav-link,.nav-item::after {
+  padding: 10px 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+.nav-link::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'GLITCH';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.nav-link:hover::after {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(100, 227, 161); 
+}
+
+.nav-link:hover {
+  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+}
+
+.nav-link:hover {
+  background-color: transparent;
+  border: 1px solid rgb(100, 227, 161);
+  box-shadow: 0px 10px 10px -10px rgb(100, 227, 161);
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+}
+
+/* Nav menu header glitch styling - slut */
 
 /* Big video styling */
 #myVideo {
@@ -478,3 +587,353 @@ body {
 }
 
 /* Fade Animations - Slut */
+
+
+/* Telefon -start */
+
+.phone-article{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 100px auto 0 auto;
+}
+
+.phone-wrapper{
+  margin: 0 auto;
+}
+
+.phone-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.iphone-x {
+  position: relative;
+  z-index: 1;
+  height: 694px;
+  width: 342px;
+}
+.iphone-x *, .iphone-x *::before, .iphone-x *::after {
+  box-sizing: border-box;
+  display: block;
+}
+.iphone-x .side {
+  background: #1c1c1c;
+  border-radius: 54px;
+  box-shadow: inset 0 0 2px 2px dimgrey, inset 0 0 0 6px #e2e3e9, 0px -1px 13px 9px rgba(255,255,255,0.8) inset;
+  height: 694px;
+  padding: 15px 22px;
+  width: 342px;
+  z-index: 1;
+}
+.iphone-x .screen {
+  background:#2E2E38;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 33px;
+  position: relative;
+  height: 652px;
+  width: 300px;
+  margin-left: -1px;
+  margin-top: 6px;
+  z-index:198;
+  overflow:hidden;
+}
+
+.iphone-x .line::after, .iphone-x .line::before {
+  content: "";
+  position: absolute;
+  border: solid rgba(68, 68, 68, 0.25);
+  border-width: 0 6px;
+  height: 5px;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+.iphone-x .line::after {
+  top: 68px;
+}
+.iphone-x .line::before {
+  bottom: 68px;
+}
+.iphone-x .header {
+  background: #1c1c1c;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  height: 24px;
+  left: 50%;
+  margin-left: -82px;
+  position: absolute;
+  top: 15px;
+  width: 164px;
+  z-index: 199;
+}
+.iphone-x .sensor-1::after, .iphone-x .sensor-1::before {
+  content: "";
+  position: absolute;
+}
+.iphone-x .sensor-1::after {
+  background: #222;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  left: 1%;
+  margin-left: 10px;
+  top: 3px;
+}
+.iphone-x .sensor-1::before {
+  background: #222;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  left: 10%;
+  margin-left: 20px;
+  top: 3px;
+}
+.iphone-x .sensor-2::after, .iphone-x .sensor-2::before {
+  content: "";
+  position: absolute;
+}
+.iphone-x .sensor-2::before {
+  background: #333;
+  border-radius: 2.5px;
+  height: 5px;
+  width: 40px;
+  left: 50%;
+  margin-left: -20px;
+  top: 7px;
+}
+.iphone-x .sensor-3::after, .iphone-x .sensor-3::before {
+  content: "";
+  position: absolute;
+}
+.iphone-x .sensor-3::before {
+  background: #444;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  left: 50%;
+  margin-left: 35px;
+  top: 3px;
+  box-shadow:0px 0px 5px 2px navy inset
+}
+.iphone-x .sensor-3::after {
+  background: #222;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  left: 65%;
+  margin-left: 33px;
+}
+.iphone-x .volume-button {
+  background: #c8cacb;
+  height: 26px;
+  left: -2px;
+  position: absolute;
+  top: 92px;
+  width: 3px;
+}
+.iphone-x .volume-button::after, .iphone-x .volume-button::before {
+  content: "";
+  position: absolute;
+  background: #c8cacb;
+  height: 50px;
+  left: 0;
+  width: 3px;
+}
+.iphone-x .volume-button::after {
+  top: 48px;
+}
+.iphone-x .volume-button::before {
+  top: 112px;
+}
+.iphone-x .power-button {
+  background: #c8cacb;
+  height: 80px;
+  right: -2px;
+  position: absolute;
+  top: 160px;
+  width: 3px;
+}
+
+.prompt{
+  background-color: #64E3A1;
+  padding: 10px 17px;
+  border-radius: 20px;
+  color: #FFF8F0;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.prompt:hover{
+  -webkit-box-shadow: 0px 2px 15px 5px rgba(100,227,161,0.3); 
+box-shadow: 0px 2px 15px 5px rgba(100,227,161,0.3);
+transition: 0.3s;
+}
+
+.prompt-cont{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.chat-rep-cont{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.chat-response{
+  width: 270px;
+  background-color: #64E3A1;
+  height: 60px;
+  border-radius: 25px;
+  display: none;
+  text-align: center;
+  padding-top: 20px;
+  color: #FFF8F0;
+  animation-name: scaleUp;
+  animation-duration: 0.3s;
+}
+
+@keyframes scaleUp {
+  0% {transform: scale(0)}
+  80% {transform: scale(1.1)}
+  100% {transform: scale(1)}
+}
+
+.rep2{
+  height: 240px;
+}
+/* #retry-button{
+  background-color: #64E3A1;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: var(--textColor);
+  text-decoration: none;
+} */
+
+.retry-cont{
+ margin-bottom: 200px;
+}
+
+#retry-button{
+  border: #64E3A1 1px solid;
+  cursor: pointer;
+}
+
+button,button::after {
+  padding: 10px 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+button::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'GLITCH';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+button:hover::after {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(100, 227, 161); 
+}
+
+button:hover {
+  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid rgb(100, 227, 161);
+  box-shadow: 0px 10px 10px -10px rgb(100, 227, 161);
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+}
+
+/* Telefon slut */
