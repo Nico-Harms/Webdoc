@@ -564,7 +564,7 @@ body {
 }
 
 .info-icon img:nth-child(1) {
-  width: 150px;
+  width: 100px;
 }
 
 .info-icon p {
@@ -579,114 +579,6 @@ body {
 .hoved-tomt {
   display: none;
 }
-
-.slide-br {
-  -webkit-animation: slide-br 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-br 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.slide-bottom {
-  -webkit-animation: slide-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.slide-bl {
-  -webkit-animation: slide-bl 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-bl 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-
-/**
- * ----------------------------------------
- * animation slide-br
- * ----------------------------------------
- */
-@-webkit-keyframes slide-br {
-  0% {
-    -webkit-transform: translateY(-400px) translateX(-350px);
-    transform: translateY(-400px) translateX(-350px);
-  }
-
-  100% {
-    -webkit-transform: translateY(100px) translateX(100px);
-    transform: translateY(20px) translateX(60px);
-  }
-}
-
-@keyframes slide-br {
-  0% {
-    -webkit-transform: translateY(-400px) translateX(-350px);
-    transform: translateY(-400px) translateX(-350px);
-  }
-
-  100% {
-    -webkit-transform: translateY(20px) translateX(60px);
-    transform: translateY(20px) translateX(60px);
-  }
-}
-
-
-/**
- * ----------------------------------------
- * animation slide-bottom
- * ----------------------------------------
- */
-@-webkit-keyframes slide-bottom {
-  0% {
-    -webkit-transform: translateY(-400px);
-    transform: translateY(-400px);
-  }
-
-  100% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-}
-
-@keyframes slide-bottom {
-  0% {
-    -webkit-transform: translateY(-400px);
-    transform: translateY(-400px);
-  }
-
-  100% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-}
-
-
-/**
- * ----------------------------------------
- * animation slide-bl
- * ----------------------------------------
- */
-@-webkit-keyframes slide-bl {
-  0% {
-    -webkit-transform: translateY(-400px) translateX(350px);
-    transform: translateY(-400px) translateX(350px);
-  }
-
-  100% {
-    -webkit-transform: translateY(20px) translateX(-100px);
-    transform: translateY(20px) translateX(-60px);
-  }
-}
-
-@keyframes slide-bl {
-  0% {
-    -webkit-transform: translateY(-400px) translateX(350px);
-    transform: translateY(-400px) translateX(350px);
-  }
-
-  100% {
-    -webkit-transform: translateY(20px) translateX(-100px);
-    transform: translateY(20px) translateX(-60px);
-  }
-}
-
-
-
 
 
 
@@ -736,12 +628,43 @@ body {
   transform: translateY(50px);
 }
 
+.from-top-mid {
+  transform: translateY(-400px);
+}
+
+.from-top-right {
+  transform: translateY(-400px) translateX(-350px);
+}
+
+.from-top-left {
+  transform: translateY(-400px) translateX(350px);
+}
+
 
 .from-left,
 .from-right,
 .from-bottom {
   transition: opacity 400ms ease-in, transform 400ms ease-in;
   opacity: 0;
+}
+
+.from-top-mid,
+.from-top-right,
+.from-top-left {
+  transition: opacity 1s ease-in, transform 1s ease-in;
+  opacity: 0;
+}
+
+.from-top-mid.appear {
+  transform: translateY(80px);
+}
+
+.from-top-right.appear {
+  transform: translateY(-30px) translateX(60px);
+}
+
+.from-top-left.appear {
+  transform: translateY(-30px) translateX(-60px);
 }
 
 .from-left.appear,

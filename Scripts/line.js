@@ -20,7 +20,7 @@ triangles.forEach(function (triangle) {
       var elementTop = triangle.getBoundingClientRect().top;
 
       // Calculate the scroll percentage for this triangle only
-      var scrollpercent = ((window.innerHeight - elementTop) / window.innerHeight) - 0.7;
+      var scrollpercent = ((window.innerHeight - elementTop) / window.innerHeight) - 0.9;
 
       // Limit the scrollpercent value between 0 and 1
       scrollpercent = Math.max(0, Math.min(1, scrollpercent));
