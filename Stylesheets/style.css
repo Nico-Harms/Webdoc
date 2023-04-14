@@ -510,18 +510,26 @@ body {
 }
 
 /* line-scroll */
-.mySVG {
-
-  width: 200px;
-  height: 500px;
-}
 
 .trekant {
   fill: none;
   stroke: #64E3A1;
-  stroke-miterlimit: 10;
   stroke-width: 20px;
 }
+
+.trekant-2 {
+  stroke-width: 14px;
+}
+
+.mySVG {
+  width: 200px;
+  height: 500px;
+}
+
+.mySVG-2 {
+  height: 700px;
+}
+
 
 /*PARALLAX END*/
 
