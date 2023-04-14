@@ -439,10 +439,6 @@ figcaption {
   stroke-dashoffset: -32.42;
 }
 
-
-
-
-
 .nav-menu {
 
   position: fixed;
@@ -487,6 +483,7 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
+/* PARALLAX */
 .parallax-img {
   position: fixed;
   z-index: -20;
@@ -516,6 +513,8 @@ body {
   z-index: 10;
 }
 
+/*PARALLAX END*/
+
 /* line-scroll */
 
 .trekant {
@@ -537,8 +536,44 @@ body {
   height: 700px;
 }
 
+/* line-scroll end */
 
-/*PARALLAX END*/
+/* Infografik */
+.infografik {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-icon-container {
+  display: flex;
+  gap: 50px;
+}
+
+.info-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-icon img {
+  width: 150px;
+}
+
+.info-icon p {
+  width: 70%;
+  padding: 0;
+}
+
+.hoved img {
+  width: 400px;
+}
+
+.hoved-tomt {
+  display: none;
+}
+
+
 
 
 /* VIDEO STYLING */
