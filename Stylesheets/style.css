@@ -325,10 +325,11 @@ p {
   display: block;
 }
 
-figcaption {
-  width: 70px;
+.graph figcaption {
+  width: 100px;
   border-right: 1px solid rgb(255, 255, 255);
   padding: 20px 0px;
+  padding-right: 40px;
   text-align: center;
   color: white;
 
