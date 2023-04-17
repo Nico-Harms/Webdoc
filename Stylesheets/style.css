@@ -248,7 +248,7 @@ p {
   gap: 30px;
 }
 
-.hvordan  {
+.hvordan {
   padding: 0px;
   margin: 0px;
 }
@@ -290,8 +290,9 @@ p {
   gap: 10px;
 
 }
-.interview h3  {
-    padding-bottom: 5rem;
+
+.interview h3 {
+  padding-bottom: 5rem;
 }
 
 .flex-wrapper {
@@ -400,12 +401,12 @@ figcaption {
   50% {}
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .graph-bar {
     animation-name: wipe-enter;
     animation-duration: 2.5s;
   }
-}
+} */
 
 /* END OF GRAPH STYLING */
 
@@ -624,6 +625,15 @@ body {
   opacity: 1;
 }
 
+.fade-in-2 {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in-2.inuse {
+  opacity: 1;
+}
+
 .from-left {
   transform: translateX(-100px);
 }
@@ -663,6 +673,20 @@ body {
   opacity: 0;
 }
 
+.from-left-graph {
+  transform: scaleX(0);
+  opacity: 0;
+}
+
+.from-left-graph.inuse {
+  transform: scaleX(1);
+  opacity: 1;
+  animation-name: wipe-enter;
+  animation-duration: 2.5s;
+  opacity: 1;
+}
+
+
 .from-top-mid.appear {
   transform: translateY(80px);
 }
@@ -686,7 +710,7 @@ body {
 /* Fade Animations - Slut */
 
 
-/*Graph video Start */ 
+/*Graph video Start */
 
 .video-section {
   display: flex;
@@ -699,7 +723,7 @@ body {
 
 }
 
-/* quote section styling */ 
+/* quote section styling */
 
 .quote-sections {
   display: flex;
@@ -712,7 +736,7 @@ body {
 .quote-sections p {
   width: 60%;
   font-size: 2.7rem;
-  
+
 }
 
 .quote-section-two {
@@ -774,7 +798,7 @@ body {
 
 .iphone-x .screen {
   background: #2E2E38;
-  
+
   background-position: center center;
   background-size: cover;
   border-radius: 33px;
