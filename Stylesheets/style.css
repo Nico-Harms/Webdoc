@@ -296,9 +296,8 @@ p {
 }
 
 .flex-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 1fr;
   gap: 20px;
 }
 
@@ -306,6 +305,7 @@ p {
   font-size: 1.5rem;
   font-weight: 200;
   text-align: center;
+  margin: auto;
 }
 
 /* Graph styling for interactive graph */
@@ -560,11 +560,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .info-icon-container {
   display: flex;
-  gap: 50px;
+  align-items: center;
 }
 
 .info-icon {
@@ -601,14 +602,14 @@ body {
 }
 
 .student-part video {
-  width: 80%;
+  width: 100%;
   display: block;
   margin: auto;
   border-radius: 30px;
 }
 
 .teacher-part video {
-  width: 80%;
+  width: 100%;
   display: block;
   margin: auto;
   border-radius: 30px;
