@@ -31,8 +31,8 @@ h4 {
   font-weight: 500;
 }
 
-.headline-scroll{
-scroll-margin-top: 100px;
+.headline-scroll {
+  scroll-margin-top: 100px;
 }
 
 a {
@@ -252,6 +252,10 @@ p {
   gap: 30px;
 }
 
+.breadtekst-2 {
+  width: 80%;
+}
+
 .hvordan {
   padding: 0px;
   margin: 0px;
@@ -268,9 +272,8 @@ p {
   display: flex;
   justify-content: center;
   gap: 5%;
-
-
 }
+
 
 .quoteWrapper figcaption {
   width: 80%;
@@ -565,6 +568,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 .info-icon-container {
@@ -742,6 +746,10 @@ body {
   width: 60%;
   font-size: 2.7rem;
 
+}
+.quote-sections p:nth-child(2){
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 .quote-section-two {
