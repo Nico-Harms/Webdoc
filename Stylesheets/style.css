@@ -50,8 +50,8 @@ a {
 }
 
 
-.nav-menu hr {
-  width: 80%;
+.header_line {
+  width: 500px;
   border: 1px solid #FFF8F0;
 }
 
@@ -275,7 +275,7 @@ p {
 }
 
 
-.quoteWrapper figcaption {
+.stig_tekst {
   width: 80%;
   border: none;
   padding: 10px 0 0 0;
@@ -333,7 +333,7 @@ p {
   display: block;
 }
 
-.graph figcaption {
+.y-akse {
   width: 100px;
   border-right: 1px solid rgb(255, 255, 255);
   padding: 20px 0px;
