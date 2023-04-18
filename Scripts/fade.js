@@ -13,7 +13,7 @@ const appearOnScroll = new IntersectionObserver(function (entries, appearOnScrol
       entry.target.classList.add('appear');
       appearOnScroll.unobserve(entry.target);
     }
-  })
+  });
 }, appearOptions);
 
 faders.forEach(fader => {
