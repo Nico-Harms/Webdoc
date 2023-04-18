@@ -967,14 +967,15 @@ body {
 
 .robotlilguy {
   position: absolute;
-  transform: scale(.5);
   bottom: -100px;
   left: 100px;
 
 }
 
 .robotlilguy img {
-  transform: rotate(45deg);
+ 
+  transform: scale(.5) rotate(45deg);
+ 
 }
 
 .prompt {
