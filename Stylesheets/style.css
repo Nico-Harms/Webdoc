@@ -274,6 +274,11 @@ p {
   gap: 5%;
 }
 
+#final-line {
+  padding-top: 0px;
+  padding-bottom: 200px;
+}
+
 
 .stig_tekst {
   width: 80%;
@@ -747,7 +752,8 @@ body {
   font-size: 2.7rem;
 
 }
-.quote-sections p:nth-child(2){
+
+.quote-sections p:nth-child(2) {
   font-size: 1.5rem;
   font-style: italic;
 }
@@ -973,9 +979,9 @@ body {
 }
 
 .robotlilguy img {
- 
+
   transform: scale(.5) rotate(45deg);
- 
+
 }
 
 .prompt {
