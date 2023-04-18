@@ -475,10 +475,10 @@ p {
   justify-content: space-evenly;
   width: 50%;
   height: 100%;
-  align-items: flex-end;
+  align-items: flex-start;
   top: 0%;
   transition: 0.3s;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(32, 32, 32, 0.5);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -496,7 +496,6 @@ p {
 
 .nav-menu.active {
   right: 0;
-  color: #64E3A1;
 }
 
 /*END OF BURGER-MENU STYLING */
@@ -562,7 +561,7 @@ body {
 }
 
 .mySVG-2 {
-  height: 700px;
+  height: 850px;
 }
 
 /* line-scroll end */
@@ -1215,5 +1214,5 @@ button:hover {
 
 .glitch-konk:hover {
   background-color: transparent;
- 
+
 }

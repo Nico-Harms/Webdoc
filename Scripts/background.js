@@ -8,7 +8,7 @@ const handleScroll = (event) => {
     console.log("images", images);
   
     images.forEach((element) => {
-      element.style.transform = `translate(0, ${scrollPosition / 10}px)`;
+      element.style.transform = `translate(0, ${scrollPosition / 25}px)`;
     });
   };
   
