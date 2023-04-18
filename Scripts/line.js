@@ -1,3 +1,5 @@
+// jshint esversion: 6
+
 // Get all the <path> elements on the page with the "trekant" class
 var triangles = document.querySelectorAll(".trekant");
 

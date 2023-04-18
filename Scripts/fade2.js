@@ -1,3 +1,5 @@
+// jshint esversion: 6
+
 // Fade Animations
 const faders2 = document.querySelectorAll('.fade-in-2');
 const sliders2 = document.querySelectorAll('.slide-in');

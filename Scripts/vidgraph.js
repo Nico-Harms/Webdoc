@@ -1,3 +1,6 @@
+// jshint esversion: 6
+
+
 const graphVid = document.getElementById('graph-video');
 var element = document.getElementById('graph-vid-sect');
 

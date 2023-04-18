@@ -1,3 +1,6 @@
+// jshint esversion: 6
+
+
 const handleScroll = (event) => {
     const scrollPosition = event.target.scrollingElement.scrollTop;
   

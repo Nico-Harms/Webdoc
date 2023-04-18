@@ -1,3 +1,6 @@
+// jshint esversion: 6
+
+
 // Her hentes alle prompts og svar fra HTML'en
 const prompts = document.querySelectorAll('.prompt');
 const responses = document.querySelectorAll('.chat-response');

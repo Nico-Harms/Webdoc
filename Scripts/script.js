@@ -1,3 +1,4 @@
+// jshint esversion: 6
 // Hamburger Menu
 const dropdown = document.querySelector(".dropdown");
 const navMenu = document.querySelector(".nav-menu");
