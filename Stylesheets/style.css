@@ -323,7 +323,7 @@ p {
 /* Graph styling for interactive graph */
 .graph {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   height: 100%;
   width: 100%;
 
@@ -558,6 +558,7 @@ body {
 .mySVG {
   width: 200px;
   height: 500px;
+  margin: auto 0;
 }
 
 .mySVG-2 {
@@ -973,7 +974,7 @@ body {
 
 .robotlilguy {
   position: absolute;
-  bottom: 100px;
+  bottom: 90px;
   left: 250px;
 
 }
@@ -982,9 +983,8 @@ body {
 
 
   transform: rotate(45deg);
-  width: 200px;
-  height: 250px;
-  transform: rotate(45deg);
+  height: 300px;
+ 
 
 }
 
