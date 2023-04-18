@@ -979,16 +979,13 @@ body {
 }
 
 .robotlilguy img {
-<<<<<<< Updated upstream
 
-  transform: scale(.5) rotate(45deg);
 
-=======
+  transform: rotate(45deg);
   width: 200px;
   height: 250px;
   transform: rotate(45deg);
- 
->>>>>>> Stashed changes
+
 }
 
 .prompt {
