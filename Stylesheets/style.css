@@ -558,6 +558,7 @@ body {
 .mySVG {
   width: 200px;
   height: 500px;
+  margin: auto 0;
 }
 
 .mySVG-2 {
