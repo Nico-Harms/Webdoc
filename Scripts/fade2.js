@@ -1,6 +1,6 @@
 // Fade Animations
 const faders2 = document.querySelectorAll('.fade-in-2');
-const sliders2 = document.querySelectorAll('slide-in');
+const sliders2 = document.querySelectorAll('.slide-in');
 const appearOptions2 = {
     threshold: 0,
     rootMargin: "0px 0px -100px 0px"

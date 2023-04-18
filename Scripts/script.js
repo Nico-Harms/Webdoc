@@ -1,16 +1,11 @@
-//Hamburger Menu
-const dropdown = document.querySelector(".dropdown ");
+// Hamburger Menu
+const dropdown = document.querySelector(".dropdown");
 const navMenu = document.querySelector(".nav-menu");
 
 dropdown.addEventListener("click", () => {
   dropdown.classList.toggle("active");
   navMenu.classList.toggle("active");
-
-  
-})
-
-
-
+});
 
 // Get all the bar elements
 const bars = document.querySelectorAll('.bar');
@@ -21,31 +16,25 @@ bars.forEach((bar) => {
   bar.style.height = `${height}%`;
 });
 
+// Graph animation - skal først køre når brugeren ser graferne (in-view)
+const graphBar1 = document.querySelector(".graph-bar");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("graph-bar-animation");
+    }
+  });
+});
 
+observer.observe(graphBar1);
 
-//graph animation - skal først køre når brugeren ser graferne. (in-view )
-const graphBar1 = document.querySelector(".graph-bar")
-
-const observer = new IntersectionObserver(entries => {})
-
-observer.observe(document.querySelector(".graph-bar"))
-
-entries.forEach(entry => {
-  if (entry.isIntersecting)
-    entry.target.classList.add("graph-bar-animation")
-})
-
-
-// Meningen at den først skal afspille 2 sekunder efter siden af loaded, men virker ikke pt 
+// Meningen at den først skal afspille 2 sekunder efter siden af loaded, men virker ikke pt
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
     var video = document.getElementById("myVideo");
     video.play();
   }, 2000);
 });
-
-
-
 
 
 
