@@ -973,15 +973,22 @@ body {
 
 .robotlilguy {
   position: absolute;
-  bottom: -100px;
-  left: 100px;
+  bottom: 100px;
+  left: 250px;
 
 }
 
 .robotlilguy img {
+<<<<<<< Updated upstream
 
   transform: scale(.5) rotate(45deg);
 
+=======
+  width: 200px;
+  height: 250px;
+  transform: rotate(45deg);
+ 
+>>>>>>> Stashed changes
 }
 
 .prompt {

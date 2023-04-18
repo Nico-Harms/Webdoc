@@ -1,0 +1,4 @@
+User-agent: * 
+Disallow: / 
+
+Sitemap: https://tuborg-squash.harmscreativity.dk//sitemap.xml
