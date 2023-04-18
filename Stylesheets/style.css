@@ -148,7 +148,7 @@ header {
 
 .nav-link:hover::after {
   animation: glitch_4011 1s;
-  text-shadow: 10 10px 10px black;
+  text-shadow: 10px 10px 10px black;
   animation-timing-function: steps(2, end);
   text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
   background-color: transparent;
@@ -967,7 +967,7 @@ body {
 
 .robotlilguy {
   position: absolute;
-  scale: 0.5;
+  transform: scale(.5);
   bottom: -100px;
   left: 100px;
 
@@ -1089,7 +1089,7 @@ button::after {
 
 button:hover::after {
   animation: glitch_4011 1s;
-  text-shadow: 10 10px 10px black;
+  text-shadow: 10px 10px 10px black;
   animation-timing-function: steps(2, end);
   text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
   background-color: transparent;
