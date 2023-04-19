@@ -733,6 +733,12 @@ body {
   justify-content: center;
 }
 
+.center-text{
+  width: 60%;
+  margin: 0 auto;
+}
+
+
 #graph-video {
   height: 400px;
 
