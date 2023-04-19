@@ -1230,31 +1230,38 @@ button:hover {
   display: flex;
   justify-content: center;
   padding-bottom: 150px;
+  gap: 40px;
 }
 
 .robot-farewell img {
   width: 200px;
+  padding-top: 70px;
 }
+
 
 .bubble {
-  --r: 25px;
-  /* the radius */
-  --t: 30px;
-  /* the size of the tail */
-
-  max-width: 300px;
-  padding: calc(2*var(--r)/3);
-  -webkit-mask:
-    radial-gradient(var(--t) at var(--_d) 0, #0000 98%, #000 102%) var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
-    conic-gradient(at var(--r) var(--r), #000 75%, #0000 0) calc(var(--r)/-2) calc(var(--r)/-2) padding-box,
-    radial-gradient(50% 50%, #000 98%, #0000 101%) 0 0/var(--r) var(--r) space padding-box;
-  background: linear-gradient(135deg, #64E3A1, #2E2E38) border-box;
-  color: #fff;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: 300px;
+  height: 150px;
+  background: #64E3A1;
+  border-radius: 40px;
+  padding: 24px;
+  text-align: center;
+  color: #FFF8F0;
 }
 
-.left {
-  --_d: 0%;
-  border-left: var(--t) solid #0000;
-  margin-right: var(--t);
-  place-self: start;
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #64E3A1;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #64E3A1;
+  border-bottom: 20px solid transparent;
+  left: 32px;
+  bottom: -24px;
 }
